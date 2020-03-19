@@ -9,7 +9,7 @@ interface IProps {
   user: IUser;
 }
 
-const User = ({ user }: IProps) => {
+const User: React.FC<IProps> = ({ user }) => {
   return (
     <div>
       <strong>Nome: </strong> {user.name} <br />
